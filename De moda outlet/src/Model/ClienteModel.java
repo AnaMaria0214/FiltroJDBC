@@ -92,9 +92,10 @@ public class ClienteModel implements CRUD {
         Cliente objCliente = null;
         try {
             //3.Crear el sql
-            String sql = "SELECT * FROM productos WHERE nombre LIKE '%" + nombre + "%';";
+            String sql = "SELECT * FROM clientes WHERE nombre LIKE ?;";
             //4.Preparar el statement
             PreparedStatement objPreparedStatement = objConnection.prepareStatement(sql);
+            objPreparedStatement.setString(1,"%"+ nombre + "%");
             //5.Ejecutar el query y guardamos el resultado en ResultSet
             ResultSet objResult = objPreparedStatement.executeQuery();
             //6.Extraer el resultado de el ResultSet

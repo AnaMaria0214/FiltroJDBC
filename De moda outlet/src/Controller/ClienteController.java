@@ -103,7 +103,7 @@ public class ClienteController {
     }
 
     public void getByName() {
-        String nombre = JOptionPane.showInputDialog(null, "Ingrese el nombre de el cliente");
+        String nombre = JOptionPane.showInputDialog(null, "Ingrese el nombre a buscar del cliente");
         StringBuilder lista = new StringBuilder("Filtrada por Nombre: " + nombre + "\n");
         lista.append(getAll(instanceModel().findByName(nombre)));
         JOptionPane.showMessageDialog(null, lista);

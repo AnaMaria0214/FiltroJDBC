@@ -81,7 +81,7 @@ public class Main {
                                 2.Crear un nuevo Producto
                                 3.Actualizar un Producto
                                 4.Eliminar un Producto
-                                5.Filtrar clientes por nombre
+                                5.Filtrar productos por nombre
                                 6.Salir
 
                                 Por favor ingrese una opción.
